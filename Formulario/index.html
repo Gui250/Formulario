@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="style.css" rel="stylesheet" >
+</head>
+<body>
+    <h1>Crie e compartilhe seu evento.</h1>
+    <p>O primeiro passo, é preencher esse
+        formulário de inscrição.</p>
+
+    <form> 
+       <fieldset>
+        <legend>Informações do Evento</legend>
+        <div class="input-wrapper"> 
+            <label>Título do evento <span>(mínimo 8 caracteres)</span></label>
+            <input type="text" >
+            <label> Link do evento <span>(começe com https://)</span></label>
+            <input type="text">
+            <label>Whatsapp para contato</label>
+            <input type="text">
+            <label>Informações extras</label>
+            <textarea></textarea>
+            <label>Categoria</label>
+            <select>
+                <option>Ao vivo</option>
+                <option>Podcast</option>
+                <option>Mentoria</option>
+            </select>
+        </div>
+       </fieldset>
+
+       <fieldset>
+        <legend>Privacidade</legend>
+        <div class="input-wrapper">
+            <label>E-mail do administrador <span>(digite um email válido)</span></label>
+            <input type="text">
+            <label>Senha de acesso para os participantes</label>
+            <input type="text">
+        </div>
+        <div class="checkbox-wrapper">
+            <input type="checkbox" id="event-private">
+            <label for="event-private">Acesso Privado</label>
+        </div>
+       </fieldset>
+
+       <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Dia e hora</legend>
+            <hr>
+          <div class="col-3">
+            <div class="input-wrapper">
+              <label for="event-date">Data</label>
+              <input type="date" id="event-date" />
+            </div>
+  
+            <div class="input-wrapper">
+              <label for="event-begin">Das</label>
+              <input type="time" id="event-begin" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-end">Até</label>
+              <input type="time" id="event-end" />
+            </div>
+          </div>
+
+          
+
+        </div>
+      </fieldset>
+
+      <footer>
+            <input class="button" type="submit" value="Salvar Evento">
+      </footer>
+
+    </form>
+</body>
+</html>
